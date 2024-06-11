@@ -2,7 +2,7 @@
 
 client_id = "527ed7fe1acd787fb453f0604af040df"
 name = "Uber"
-application_url = "https://actors-profession-christina-leg.trycloudflare.com"
+application_url = "https://responsibilities-bikini-visits-lyrics.trycloudflare.com"
 embedded = true
 
 [build]
@@ -16,9 +16,9 @@ scopes = "read_checkouts,read_orders,read_products,read_script_tags,read_shippin
 
 [auth]
 redirect_urls = [
-  "https://actors-profession-christina-leg.trycloudflare.com/auth/callback",
-  "https://actors-profession-christina-leg.trycloudflare.com/auth/shopify/callback",
-  "https://actors-profession-christina-leg.trycloudflare.com/api/auth/callback"
+  "https://responsibilities-bikini-visits-lyrics.trycloudflare.com/auth/callback",
+  "https://responsibilities-bikini-visits-lyrics.trycloudflare.com/auth/shopify/callback",
+  "https://responsibilities-bikini-visits-lyrics.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
