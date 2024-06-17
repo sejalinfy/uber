@@ -86,9 +86,11 @@ export function ProductsCard() {
       console.log(response);
       if(response.carrierStatus == 1)
       {
+        console.log("Inside If");
         setIsChecked(true);
       }
       else{
+        console.log("Inside else");
         setIsChecked(false);
       }
     } catch (error) {
@@ -103,6 +105,7 @@ export function ProductsCard() {
       });
       const response = await request.json();
       setResponseMessage("Carrier service enabled successfully.");
+      
       console.log(response);
     } catch (error) {
       setResponseMessage("Error creating carrier service.");
@@ -117,6 +120,7 @@ export function ProductsCard() {
       });
       const response = await request.json();
       setResponseMessage("Carrier service disable successfully.");
+      //setIsChecked(false);
       console.log(response);
     } catch (error) {
       setResponseMessage("Error deleting carrier service.");
@@ -126,8 +130,10 @@ export function ProductsCard() {
 
   const handleChange = (event) => {
     if (event.target.checked) {
+      setIsChecked(true);
       carrierApiCreate();
     } else {
+      setIsChecked(false);
       carrierApiDelete();
     }
   };
